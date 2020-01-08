@@ -3,63 +3,90 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Aaron Sofaly</title>
 
-    <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.6.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.6.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.6.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.6.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.6.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/7.6.1/firebase-analytics.js"></script>
     <script defer src="/__/firebase/init.js"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 1.3em;
+        color: #FFF;
+        background-color: #F36266;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      h1, h2 {
+        color: #564256;
+      }
+      h1, h2, p {
+        margin: 20px 0px;
+      }
+      a {
+        color: #E9D985;
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      header, footer {
+        text-align: center;
+      }
+      header, main, footer {
+        margin: 0px auto;
+        width: 500px;
+      }
+      @media (max-width: 540px) { /* width + padding */
+        header, main, footer {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <header>
+      <img src="./images/aaron.png" alt="Aaron">
+      <h1>Aaron Sofaly</h1>
+    </header>
+    <main>
+      <section>
+        <p>Hey There!</p>
+        <p>I'm a JavaScript developer, entrepreneur, trader, gamer, and fisherman. Keep reading to learn more :)</p>
+      </section>
+      <section>
+        <h2>JavaScript Developer</h2>
+        <p>I'm a huge JavaScript nerd. I originally started writing JavaScript around 2007 when <a href="https://jquery.com/" target="_blank">jQuery</a> first gained popularity. I started dabbling with <a href="https://nodejs.org/en/" target="_blank">Node.js</a> around 2011 but by 2015 it was my go to server framework (I was previously using PHP & Ruby). I've used many frontend frameworks through the years such as <a href="https://backbonejs.org/" target="_blank">Backbone.js</a>, <a href="https://angular.io/" target="_blank">Angular.js</a>, & <a href="https://reactjs.org/" target="_blank">React.js</a>. But I absolutely love that <a href="https://vuejs.org/" target="_blank">Vue.js</a> takes the best parts of these frameworks and has been my go to frontend framework since 2017.</p>
+      </section>
+      <section>
+        <h2>Entrepreneur</h2>
+        <p>I Co-Founded <a href="https://travelcheaters.com/deals.html" target="_blank">Travel Cheaters</a> which is a fully-automated travel deals site that hunts down awesome deals on airfare.</p>
+      </section>
+      <section>
+        <h2>Trader</h2>
+        <p>I actively trade in cryptocurrencies such as <a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" target="_blank">Bitcoin</a>, <a href="https://www.tradingview.com/symbols/LTCUSD/?exchange=COINBASE" target="_blank">Litecoin</a>, <a href="https://www.tradingview.com/symbols/ETHUSD/?exchange=COINBASE" target="_blank">Ethereum</a>, <a href="https://www.tradingview.com/symbols/XRPUSD/?exchange=COINBASE" target="_blank">Ripple</a>, and <a href="https://www.tradingview.com/symbols/XTZUSD/?exchange=COINBASE" target="_blank">Tezos</a>. I also invest in stocks such as <a href="https://www.tradingview.com/symbols/NASDAQ-AMD/" target="_blank">AMD</a> and trade options.</p>
+      </section>
+      <section>
+        <h2>Gamer</h2>
+        <p>For me, the greatest game of all time is <a href="https://www.rocketleague.com/" target="_blank">Rocket League</a>. When I'm not playing Rocket League, I also enjoy platformers like <a href="https://mario.nintendo.com/" target="_blank">Super Mario Brothers</a>, <a href="http://supermeatboy.com/" target="_blank">Super Meat Boy</a>, and <a href="https://yachtclubgames.com/shovel-knight/" target="_blank">Shovel Knight</a>. I also like Metroidvania games such as <a href="https://hollowknight.com/" target="_blank">Hollow Knight</a>, <a href="https://dead-cells.com/" target="_blank">Dead Cells</a>, and <a href="https://www.orithegame.com/blind-forest/" target="_blank">Ori and the Blind Forest</a>. I'm also a big fan of <a href="https://www.fromsoftware.jp/ww/" target="_blank">FromSoftware</a> and the <a href="https://www.darksouls.jp/" target="_blank">Dark Souls</a> series.</p>
+      </section>
+      <section>
+        <h2>Fisherman</h2>
+        <p>Nothing beats chilling out on one of Arizona's great lakes and casting for trout or bass.</p>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/aaronsofaly/" target="_blank"><img src="./images/linkedin.png" width="25" alt="LinkedIn"></a>
+    </footer>
   </body>
 </html>
