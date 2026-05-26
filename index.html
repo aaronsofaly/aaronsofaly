@@ -513,7 +513,8 @@
       </section>
 
       <footer>
-        <div>© 2026 Aaron Sofaly • Scottsdale, AZ</div>
+        <div>© <span id="footer-year"></span> Aaron Sofaly • Scottsdale, AZ</div>
+        <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
         <div style="display: flex; gap: 18px">
           <a
             href="https://www.linkedin.com/in/aaronsofaly"
